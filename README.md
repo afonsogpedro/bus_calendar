@@ -1,0 +1,22 @@
+Instrucciones:
+
+- Ejecutar los siguientes comandos
+  - git clone 
+  - composer install
+  - copy .env.example .env
+  - Completar los datos de conexion a BD en el archivo .env
+  - php artisan key:generate
+  - php artisan passport:install
+  - php artisan serve
+- Rutas API
+  - Login: {host}/api/user/login   
+    - tipo: POST
+      - email
+      - password
+  - Reservacion Usuario: {host}/api/bus/reservations   
+    - tipo: GET
+      - route
+      - Bearer Token
+  - Logout {host}/api/user/logout   
+    - tipo:GET
+      - Bearer Token
