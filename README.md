@@ -17,6 +17,10 @@ Instrucciones:
     - tipo: GET
       - route
       - Bearer Token
+  - Disabled Days: {host}/api/bus/disableddays
+    - tipo: GET
+      - route (opcional)
+      - Bearer Token
   - Logout {host}/api/user/logout   
     - tipo:GET
       - Bearer Token

@@ -17,5 +17,3 @@ use App\Http\Controllers\testController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('test', [testController::class, 'test'])->name('test');
-Route::get('test', [testController::class, 'test'])->name('test');

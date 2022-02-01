@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\CalendarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,5 +32,6 @@ Route::prefix('user')->group(function () {
 Route::prefix('bus')->group(function () {
     Route::middleware(['auth:api'])->group(function () {
         Route::get('reservations', [ReservationController::class, 'getReservation']);
+        Route::get('disableddays', [CalendarController::class, 'getDisabledDays']);
     });
 });
